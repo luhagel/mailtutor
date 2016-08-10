@@ -1,0 +1,82 @@
+container {
+    flex: 1;
+    justifyContent: center;
+    alignItems: center;
+    backgroundColor: #eee;
+  }
+  navContainer {
+    flex: .1;
+    alignSelf: stretch;
+  }
+  navbar {
+    backgroundColor: #5B29C1;
+    borderBottomColor: #48209A;
+    borderBottomWidth: 1;
+    justifyContent: space-between;
+  }
+  welcome {
+    fontSize: 20;
+    textAlign: center;
+    margin: 10;
+  }
+  instructions {
+    textAlign: center;
+    color: #8888ff;
+    marginBottom: 5;
+  }
+  content {
+    flex: .9;
+    justifyContent: center;
+    alignItems: center;
+  }
+  navbarText {
+    color: #fff;
+  }
+
+  ListViewContainer {
+    flex: 1;
+    flexDirection: row;
+    padding: 10
+  }
+  InboxList {
+    marginTop: 10;
+    flex: 1;
+    justifyContent: flex-start;
+    alignSelf: stretch;
+  }
+
+  MailRowContainer {
+    flex: 1;
+    flexDirection: row;
+    justifyContent: space-between;
+    borderBottomWidth: 1;
+    maxHeight: 60;
+    padding: 10;
+  }
+  subject {
+    fontSize: 16;
+    marginTop: 15;
+    textAlign: left;
+  }
+  read {
+    color: #888;
+  }
+  unread {
+    color: #000;
+  }
+  time {
+    marginTop: 15;
+    color: #888;
+  }
+
+  mailheader{
+  	flex: .1;
+  	fontWeight: bold;
+  	fontSize: 20;
+  }
+
+  mailcontainer{
+	flex: .9;
+	alignSelf: stretch;
+	backgroundColor: #ddd;
+  }
