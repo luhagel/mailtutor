@@ -22,12 +22,16 @@ export default class Root extends Component {
     this.props.dispatch(action);
   }
 
+  handleViewMail = action => {
+      this.props.dispatch(action);
+  }
+
   renderScene = props => {
     switch (props.scene.key) {
       case 'scene_home':
         return <Home navigate={this.handleNavigation} />;
       case 'scene_inbox':
-        return <Inbox navigate={this.handleNavigation} />;
+        return <Inbox navigate={this.handleNavigation} mail={this.handleViewMail} />;
       case 'scene_singlemail':
         return <Mail navigate={this.handleNavigation} />;
       default:

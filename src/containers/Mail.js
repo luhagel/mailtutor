@@ -7,6 +7,9 @@ import { connect } from 'react-redux';
 
 const styles = require('../../styles/style.js');
 
+@connect(
+    state => state
+)
 export default class InboxContainer extends Component {
   static propTypes = {
     navigate: PropTypes.func.isRequired
@@ -22,12 +25,13 @@ export default class InboxContainer extends Component {
       title: 'Back',
       handler: this.handleBack
     };
+    let mailHeader = this.props.mail.subject
     return (
       <View style={styles.container}>
         <View style={styles.navContainer}>
           <NavigationBar
             style={styles.navbar}
-            title={{title: 'Mail Title', tintColor: '#fff'}}
+            title={{title: mailHeader, tintColor: '#fff'}}
             rightButton={{title: 'Archive'}}
             leftButton={logoutButton}
           />

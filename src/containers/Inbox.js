@@ -18,9 +18,10 @@ export default class InboxContainer extends Component {
     navigate({ type: 'pop' });
   }
 
-  handleViewMail = (mail) => {
-    const { navigate } = this.props;
-    navigate({ type: 'push', key: 'singlemail', payload: {mail}})
+  handleViewMail = (email) => {
+    const { navigate, mail } = this.props;
+    mail({ type: 'setActive', key: {email}});
+    navigate({ type: 'push', key: 'singlemail'});
   }
 
   render() {
