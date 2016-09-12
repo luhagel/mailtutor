@@ -15,7 +15,7 @@ export default class Inbox extends Component {
         read: false
       },
       {
-        subject: "Meeting Tomorrow @5pm",
+        subject: "Meeting Tomorrow @5pm", 
         received: "Today, 11:34",
         read: true
       }
